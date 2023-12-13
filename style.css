@@ -145,6 +145,49 @@
         padding: 1rem;
     }
     /* ==============================================Service Container done */
+    .phone-icon{
+        width: 3rem;
+        /* height: 2rem; */
+    }
+    .appointment-container{
+        background-position: relative;
+        text-align: center;
+        margin: -2rem 2rem;
+    }
+    .appointment-container-inside{
+        border-radius: 0.5rem;
+        background-color: rgba(255, 0, 0, 0.719);
+        padding: 5rem 2rem;
+    }
+    .phone-numbertext{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-weight: 700;
+    }
+    .cell-no{
+        color: white;
+        font-size: larger;
+    }
+    .appointment-text{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: small;
+    }
+    .appointmentBtn{
+        width: 10rem;
+        height: 3rem;
+        border-radius: 0.5rem;
+        border: 2px solid black;
+        color: black;
+        background-color: rgb(251, 255, 0);
+        font-weight: bolder;
+        font-family: 'Poppins', sans-serif;
+        font-size: small;
+    }
+    .appointmentBtn:hover{
+        background-color: darkgreen;
+    }
 
  }
 
@@ -154,10 +197,20 @@
         
     }
     /* ==============================================Service Container done */
+    .appointment-container{
+        margin: -2rem 3rem;
+    }
 
  }
  @media (min-width:425px) {
     /* ==============================================Service Container done */
+    .appointment-text{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .appointment-container{
+        margin: -2rem 4rem;
+    }
 
  }
  @media (min-width: 630px) {
@@ -190,7 +243,7 @@
     .identyCard-main{
         padding-right: 2rem;
         padding-bottom: 0px;
-        border-right: 2px solid red;
+        border-right: 4px solid red;
         border-bottom: none;
     }
 
@@ -209,6 +262,32 @@
         padding-top: 2rem;
     } 
     /* ==============================================Service Container done */
+    .icon-appointmentTxt-holder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+        padding-bottom: 2rem;
+        gap: 2rem;
+    }
+    .phonenumber-freeConsultation{
+        padding: 0px;
+    }
+    .appointment-text{
+        text-align: left;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .phone-numbertext{
+        padding-bottom: 0px;
+    }
+    .appointment-container-inside{
+        border-radius: 0.5rem;
+        padding: 5rem 4rem;
+    }
+    .appointment-container{
+        margin: -2rem 5rem;
+    }
  }
  @media (min-width:760px) {
     .banner-inside, .Our-service-container{
@@ -219,6 +298,9 @@
         width: 6rem;
     }
     /* ==============================================Service Container done */
+    .appointment-container{
+        margin: -2rem 6rem;
+    }
  }
 
  @media (min-width:1024px) {
@@ -328,6 +410,34 @@
         font-weight: 700;
     }
     /* ==============================================Service Container done */
+    .appointment-container-inside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+    }
+    .appointmentBtn{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: 18rem;
+        height: 3.5rem;
+    }
+    /* .appointmentBtn{
+        width: 10rem;
+        height: 3rem;
+    .icon-appointmentTxt-holder{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    } */
+    .appointment-container{
+        margin: -3rem 6rem;
+    }
+    .appointment-text{
+        font-size: small;
+    }
+    .icon-appointmentTxt-holder{
+        padding: 0px;
+    }
 
  }
 
@@ -399,6 +509,9 @@
         gap: 7rem;
     }
     /* ==============================================Service Container done */
+    .appointment-text{
+        font-size: large;
+    }
    
  }
  @media (min-width:1701px) {
