@@ -2,12 +2,13 @@
     margin: 0px;
     padding: 0px;
 }
+
 @media (min-width:0px) { 
     header{
         text-align: center;
     }
     .nav-container{
-        background-color: gray;
+        background-color: rgb(66, 66, 66);
     }
 
     .nav-inside{
@@ -17,7 +18,7 @@
     .nav-option{
         padding-top: 2rem;
     }
-    li{
+    .nav-option>ul>li{
         list-style: none;
         padding-bottom: 1rem;
         font-size: 20px;
@@ -40,12 +41,12 @@
         justify-items: center;
         /* ================================================= */
     }
-    .banner-inside{
+    .banner-inside, .Our-service-container{
         padding-left: 2rem;
         padding-right: 2rem;
         
     }
-    .shortTextofTitle{
+    .shortTextofTitle , .service-shorttext{
         font-family: 'Poppins', sans-serif;
         font-size: small;
         padding-top: 1.5rem;
@@ -72,28 +73,167 @@
         border: 2px solid black;
         font-weight: 600;
     }
+    /* =================================================================================================Header */
+    .identyCard-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 2px solid red;
+    }
+    .Our-service-container{
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        background-image: url(image/footer-bg2.png);
+        background-color: rgb(27, 27, 27);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* padding: 20% 2rem; */
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+    }
+    .ol-ourservice{
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+        list-style-position: inside;
+        list-style-type: decimal;
+        padding-bottom: 8%;
+    }
+    .card-authorImg{
+        border-radius: 50%;
+        /* height: 20%; */
+        width: 4rem;
+    }
+    #indentyCard-btn:hover {
+        color: orangered;
+        border: 2px solid orangered;
+    }
+    .indentyCard{
+        padding-bottom: 4rem;
+    }
+    
+    .indentyCard-btn{
+        padding-top: 2rem;
+    }
+    .service-img-container{
+        color: black;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        /* align-content: center; */
+        gap: 1rem;
+        column-gap: 0px;
+    }
+    .service1-img, .service2-img, .service3-img, .service4-img{
+        height: 3rem;
+        width: 3rem;
+        padding: 0.5rem;
+    }
+    .service1, .service2, .service3, .service4{
+        background-color: white;
+        border: 2px solid orangered;
+        border-radius: 0.5rem;
+        width: 8rem;
+        padding: 1rem;
+    }
+    /* ==============================================Service Container done */
 
  }
- @media (min-width:760px) {
-    .banner-inside{
-        padding-left: 3.5rem;
-        padding-right: 3.5rem;
+
+ @media (min-width: 375px) {
+    .ol-ourservice{
+        font-size: 12px;
         
     }
+    /* ==============================================Service Container done */
+
+ }
+ @media (min-width:425px) {
+    /* ==============================================Service Container done */
+
+ }
+ @media (min-width: 630px) {
+    .ol-ourservice{
+        font-size: 14px;
+        
+    }
+    .headerbtn:hover{
+        background-color: transparent;
+        color: black;
+        border: 3px solid black;
+        font-weight: 600;
+    }
+    #indentyCard-btn:hover{
+        background-color: transparent;
+        color: orangered;
+        border: 3px solid orangered;
+        font-weight: 600;
+    }
+
+    .serviceTitle{
+        font-size: 2rem;
+    }
+    .indentyCard-btn{
+        padding-top: 0px;
+    }
+    .indentyCard-name{
+        text-align: left;
+    }
+    .identyCard-main{
+        padding-right: 2rem;
+        padding-bottom: 0px;
+        border-right: 2px solid red;
+        border-bottom: none;
+    }
+
+    .indentyCard{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .service-img-container{
+        grid-template-columns: repeat(2, 12rem);
+        justify-content: center;
+        align-content: center;
+        gap: 1rem;
+        column-gap: 2rem;
+        padding-top: 2rem;
+    } 
+    /* ==============================================Service Container done */
+ }
+ @media (min-width:760px) {
+    .banner-inside, .Our-service-container{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    .card-authorImg{
+        width: 6rem;
+    }
+    /* ==============================================Service Container done */
  }
 
  @media (min-width:1024px) {
+    
     .nav-inside{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    ul{
+    .nav-option>ul{
         display: flex;
         justify-content: space-evenly;
         gap: 3rem;
     }
-    li{
+    .nav-option>ul>li{
         padding-bottom: 0px;
         
     }
@@ -107,7 +247,7 @@
     .header-banner{
         height: 100vh;
     }
-    .banner-inside{
+    .banner-inside, .Our-service-container{
         padding-left: 6rem;
         padding-right: 6rem;
         
@@ -115,8 +255,17 @@
     .headerTitle{
         font-size: 3rem;
     }
-    .shortTextofTitle{
+    .serviceTitle{
+        font-size: 2.5rem;
+    }
+    .shortTextofTitle {
         font-size: 1rem;
+    }
+    .service-shorttext , .ol-ourservice{
+        font-size: 14px;
+    }
+    .indentyCard-name{
+        font-size: 16px;
     }
     .headerbtn{
         height: 3rem;
@@ -127,16 +276,75 @@
     .headerbtn-container{
         gap: 1.5rem;
     }
+    .Our-service-container, .banner-inside{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    
+    .Our-service-container{
+        height: 100vh;
+    }
+    .indentyCard{
+        padding-bottom: 0px;
+        justify-content: left;
+    }
+    .service-img-container{
+        grid-template-columns: repeat(2, 8rem);
+        gap: 1rem;
+        column-gap: 3rem;
+        padding-top: 2rem;
+    } 
+    .serviceTextlist-container{
+        text-align: left;
+        
+    }
+    .Service-description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .service1-img, .service2-img, .service3-img, .service4-img{
+        height: 4rem;
+        width: 4rem;
+        padding: 1rem;
+    }
+    .service1, .service2, .service3, .service4{
+        background-color: white;
+        border: 3px solid orangered;
+        border-radius: 1rem;
+        width: 8rem;
+        padding: 1.5rem;
+    }
+    .service-img-container{
+        grid-template-columns: repeat(2, 12rem);
+        justify-content: left;
+        align-content: start;
+        gap: 1rem;
+        column-gap: 0.5rem;
+        padding-top: 0px;
+    }
+    .service-title{
+        font-weight: 700;
+    }
+    /* ==============================================Service Container done */
+
  }
 
  @media (min-width:1440px) {
     .headerTitle{
         font-size: 4rem;
     }
-    .shortTextofTitle{
+    .serviceTitle{
+        font-size: 3.5rem;
+    }
+    .shortTextofTitle, .service-shorttext{
         font-size: 1.5rem;
         padding-top: 3rem;
         padding-bottom: 3rem;
+    }
+    .service-shorttext, .ol-ourservice{
+        font-size: 20px;
     }
     .headerbtn{
         height: 4rem;
@@ -151,13 +359,47 @@
         font-size: 1.5rem;
     }
     .nav-inside{
-        padding: 1.2% 10%;
+        padding: 1% 10%;
     }
     .banner-inside{
         padding-left: 6rem;
         padding-right: 6rem;
         
     }
+    .indentyCard-name{
+        font-size: 1.5rem;
+    }
+    .Our-service-container, .banner-inside{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    .service1-img, .service2-img, .service3-img, .service4-img{
+        height: 8rem;
+        width: 8rem;
+        padding: 2rem;
+    }
+    .service-title{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .service1, .service2, .service3, .service4{
+        background-color: white;
+        border: 4px solid orangered;
+        border-radius: 1.5rem;
+        width: 12rem;
+        padding: 1rem;
+    }
+    .service-img-container{
+        grid-template-columns: repeat(2, 10rem);
+        gap: 1rem;
+        column-gap: 6rem;
+        padding-top: 0px;
+    } 
+    .Service-description{
+        gap: 7rem;
+    }
+    /* ==============================================Service Container done */
+   
  }
  @media (min-width:1701px) {
     .banner-inside{
@@ -165,10 +407,14 @@
         padding-right: 8rem;
         
     }
-    .shortTextofTitle{
+    .Our-service-container{
+        padding-left: 14rem;
+        padding-right: 14rem;
+        
+    }
+    .shortTextofTitle, .service-shorttext, .ol-ourservice{
         font-size: 2rem;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding: 3rem 6rem;
     }
     .headerbtn{
         height: 6rem;
@@ -185,14 +431,82 @@
     .nav-inside{
         padding: 1.2% 10%;
     }
+    .service1-img, .service2-img, .service3-img, .service4-img{
+        height: 10rem;
+        width: 10rem;
+        padding: 2.5rem;
+    }
+    .service-title{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .service1, .service2, .service3, .service4{
+        background-color: white;
+        border: 4px solid orangered;
+        border-radius: 1.5rem;
+        width: 18rem;
+        padding: 1rem;
+    }
+    .service-img-container{
+        grid-template-columns: repeat(2, 10rem);
+        gap: 2rem;
+        column-gap: 12rem;
+        padding-top: 0px;
+    } 
+    .Service-description{
+        gap: 8rem;
+        
+    }
+    .service-shorttext, .ol-ourservice{
+        font-size: 24px;
+    }
+    /* ==============================================Service Container done */
+    
  }
 
+ @media (min-width:2000px) {
+    .Our-service-container{
+        padding-left: 20rem;
+        padding-right: 20rem;
+        
+    }
+    .indentyCard-name{
+        font-size: 2.5rem;
+    }
+    .serviceTitle{
+        font-size: 4.5rem;
+    }
+    .card-authorImg{
+        width: 8rem;
+    }
+    .Service-description{
+        gap: 8rem;
+        
+    }
+    .service-shorttext, .ol-ourservice{
+        font-size: 28px;
+    }
+    .service1, .service2, .service3, .service4{
+        background-color: white;
+        border: 4px solid orangered;
+        border-radius: 1.5rem;
+        width: 18rem;
+        height: 20rem;
+        padding: 1.5rem;
+    }
+    .service-img-container{
+        gap: 2rem;
+        column-gap: 15rem;
+        
+    } 
+    /* ==============================================Service Container done */
+ }
 
  @media (min-width:2200px) {
-    .headerTitle{
+    .headerTitle, .serviceTitle{
         font-size: 5rem;
     }
-    .shortTextofTitle{
+    .shortTextofTitle, .service-shorttext, .ol-ourservice{
         font-size: 2rem;
         padding-top: 3rem;
         padding-bottom: 3rem;
@@ -215,6 +529,31 @@
     .banner-inside{
         padding-left: 12rem;
         padding-right: 12rem;
+    }
+    .Our-service-container{
+        padding-left: 26rem;
+        padding-right: 26rem;
         
     }
+    .Service-description{
+        gap: 12rem;
+        
+    }
+    .service-shorttext, .ol-ourservice{
+        font-size: 30px;
+    }
+    .service1, .service2, .service3, .service4{
+        background-color: white;
+        border: 6px solid orangered;
+        border-radius: 1.5rem;
+        width: 20rem;
+        height: 22rem;
+        padding: 1rem;
+    }
+    .service-img-container{
+        gap: 2.5rem;
+        column-gap: 16rem;
+        
+    } 
+    /* ==============================================Service Container done */
  }
