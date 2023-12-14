@@ -438,6 +438,9 @@
     .icon-appointmentTxt-holder{
         padding: 0px;
     }
+    .appointment-container-inside{
+        border-radius: 1rem;
+    }
 
  }
 
@@ -510,8 +513,21 @@
     }
     /* ==============================================Service Container done */
     .appointment-text{
-        font-size: large;
+        font-size: 20px;
     }
+    .phone-numbertext{
+        font-size: 24px;
+    }
+    .appointmentBtn{
+        width: 24rem;
+        height: 4.5rem;
+        font-size: larger;
+    }
+    .appointment-container-inside{
+        border-radius: 1.5rem;
+        padding: 6rem;
+    }
+    
    
  }
  @media (min-width:1701px) {
@@ -574,6 +590,25 @@
         font-size: 24px;
     }
     /* ==============================================Service Container done */
+    .appointment-text{
+        font-size: 26px;
+    }
+    .appointmentBtn{
+        width: 38rem;
+        height: 7.5rem;
+        font-size: 1.5rem;
+        border-radius: 1rem;
+    }
+    .phone-numbertext{
+        font-size: 2rem;
+    }
+    .appointment-container-inside{
+        padding: 8rem;
+    }
+    .phone-icon{
+        height:4.5rem;
+        width: 4.5rem;
+    }
     
  }
 
@@ -610,9 +645,29 @@
     .service-img-container{
         gap: 2rem;
         column-gap: 15rem;
-        
     } 
     /* ==============================================Service Container done */
+    .appointment-text{
+        font-size: 32px;
+    }
+    .appointmentBtn{
+        width: 38rem;
+        height: 7.5rem;
+        font-size: 2rem;
+        border-radius: 1rem;
+    }
+    .phone-numbertext{
+        font-size: 2.5rem;
+    }
+    .appointment-container-inside{
+        padding: 10rem;
+    }
+    .phone-icon{
+        height: 5rem;
+        width: 5rem;
+    }
+
+
  }
 
  @media (min-width:2200px) {
@@ -669,4 +724,23 @@
         
     } 
     /* ==============================================Service Container done */
+    .appointment-text{
+        font-size: 32px;
+    }
+    .appointmentBtn{
+        width: 32rem;
+        height: 7.5rem;
+        font-size: 2rem;
+        border-radius: 1rem;
+    }
+    .phone-numbertext{
+        font-size: 2.5rem;
+    }
+    .appointment-container-inside{
+        padding: 12rem;
+    }
+    .phone-icon{
+        height: 5rem;
+        width: 5rem;
+    }
  }
