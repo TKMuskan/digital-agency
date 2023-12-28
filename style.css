@@ -29,11 +29,11 @@
         
     }
     .header-banner{
-        background-image: url(image/background.jpg);
+        background-image: url("image/background.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        
+        /* color:white; */
         height: 80vh;
         display: flex;
         flex-direction: column;
@@ -90,7 +90,7 @@
         align-items: center;
         text-align: center;
         color: white;
-        background-image: url(image/footer-bg2.png);
+        background-image: url("image/footer-bg2.png");
         background-color: rgb(27, 27, 27);
         background-position: center;
         background-repeat: no-repeat;
@@ -145,14 +145,19 @@
         padding: 1rem;
     }
     /* ==============================================Service Container done */
+    .appointmentNews-parent{
+        position: relative;
+    }
     .phone-icon{
         width: 3rem;
         /* height: 2rem; */
     }
     .appointment-container{
-        background-position: relative;
+        position: absolute;
         text-align: center;
+        z-index: 1;
         margin: -2rem 2rem;
+        /* margin: -2rem 2rem; */
     }
     .appointment-container-inside{
         border-radius: 0.5rem;
@@ -188,6 +193,135 @@
     .appointmentBtn:hover{
         background-color: darkgreen;
     }
+    /* ================================================Appointment done */
+    .news-container{
+        position: relative;
+        top: 27rem;
+        text-align: center;
+        padding: 6rem 2rem 5rem;
+        background: rgb(60,60,60);
+        background: linear-gradient(90deg, rgb(12, 12, 12) 0%, rgb(255, 255, 255) 50%, rgb(12, 12, 12) 100%);
+        color: rgb(0, 0, 0);
+       
+        
+    }
+    .blog{
+        color: orangered;
+    }
+    #blogTitle{
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+    }
+    .blogcard-Img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 14rem;
+        height: 10rem;
+    }
+    .blogCard{
+        text-align: center;
+        border-bottom: groove;
+        padding: 1rem;
+    }
+    .blogCardTile{
+        font-size: 14px;
+        font-family: 'Poppins', sans-serif;
+
+    }
+    .blogCard-msg{
+        font-size: small;
+    }
+    .blogCardTile, .blogCard-msg{
+        color: black;
+        text-align: left;
+    }
+    .blogCardTile{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .news-card-container{
+        background-color: gray;
+        padding-top: 2rem;
+        /* padding-bottom: 1rem; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .blogCard-arrow{
+        width: 2rem;
+        height: 2rem;
+        padding-top: 1rem;
+    }
+
+    /* ============================================News and blog done */
+    .footer-icon{
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    footer{
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 5rem;
+        padding-top: 30rem;
+        background-color: rgb(0, 0, 0);
+    }
+    .footer-links-icon1{
+        width: 1rem;
+        height: 1rem;
+        padding-right: 0.5rem;
+    }
+    .footer-msgTitle{
+        font-weight: 900;
+        font-size: 18px;
+        color: rgb(199, 96, 0);
+    }
+    .footer-links{
+        padding-top: 2.5rem;
+    }
+    /* ==================================================================================================================== */
+    .footer-logo{
+        width: 7rem;
+        height: 2rem;
+    }
+
+
+   .footer{
+    position: relative;
+   }
+   .footer-logo-container{
+    z-index: 3;
+   }
+   .footer-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+   }
+   #footer-msg{
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+   }
+   .footer-links > ul{
+    display: flex;
+    flex-direction: column;
+   }
+   .copyright-msg{
+    color: rgb(153, 153, 153);
+    padding-top: 5rem;
+    border-bottom: 2rem;
+    font-size: small;
+   }
+   
+        
 
  }
 
@@ -200,6 +334,11 @@
     .appointment-container{
         margin: -2rem 3rem;
     }
+    .news-container{
+        padding: 6rem 3rem 3rem;
+    }
+    
+
 
  }
  @media (min-width:425px) {
@@ -211,6 +350,24 @@
     .appointment-container{
         margin: -2rem 4rem;
     }
+    /* ===================================appointment done */
+   .news-container{
+    top: 28rem;
+   }
+   #blogTitle{
+    font-size: 2rem;
+   }
+   .news-container{
+        padding: 6rem 3.5rem 3rem;
+    }
+    /* ================================================Blog and News Done*/
+
+
+ }
+ @media (min-width:452px) {
+   .news-container{
+    top: 25rem;
+   }
 
  }
  @media (min-width: 630px) {
@@ -288,6 +445,57 @@
     .appointment-container{
         margin: -2rem 5rem;
     }
+    /* ======================================Appointment  done*/
+    .news-container{
+        top: 18.5rem;
+    }
+    .news-card-container{
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 0px; */
+    }
+    .blogCard{
+        border-bottom: none;
+        padding: 1rem;
+    }
+   /* ================================================Blog and News Done*/
+   .footer-icon{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    }
+    footer{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 5rem;
+    padding-top: 24rem;
+    }
+    .footer-logoMsg-container{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .footer-links-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: left;
+        padding-bottom: 4rem;
+    }
+    .footer-msg{
+        justify-content: left;
+    }
+    #footer-msg{
+        font-size: 18px;
+    }
+    .footer-links{
+        padding-top: 0px;
+    }
+    .footer-links-container{
+        padding-top: 3.5rem;
+    }
+    .footer-logo{
+        width: 9rem;
+        height: 3rem;
+    }
  }
  @media (min-width:760px) {
     .banner-inside, .Our-service-container{
@@ -300,6 +508,17 @@
     /* ==============================================Service Container done */
     .appointment-container{
         margin: -2rem 6rem;
+    }
+    .blogCard-arrow-container{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    /* ================================================Blog and News Done*/
+    footer{
+        padding-left: 7rem;
+        padding-right: 7rem;
+        padding-bottom: 5rem;
+        padding-top: 24rem;
     }
  }
 
@@ -422,13 +641,6 @@
         width: 18rem;
         height: 3.5rem;
     }
-    /* .appointmentBtn{
-        width: 10rem;
-        height: 3rem;
-    .icon-appointmentTxt-holder{
-        padding-top: 0px;
-        padding-bottom: 0px;
-    } */
     .appointment-container{
         margin: -3rem 6rem;
     }
@@ -441,7 +653,116 @@
     .appointment-container-inside{
         border-radius: 1rem;
     }
+    /* ===============================================Appointment done */
+    .news-container{
+        top: 12rem;
+    }
+    .news-card-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .blogCard-arrow-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
 
+    }
+    .blogCard-arrow{
+        width: 2rem;
+        height: 2rem;
+        padding-top: 0px;
+        
+    }
+    #blogTitle{
+        font-size: 2.5rem;
+        padding-bottom: 2.5rem;
+        padding-top: 2rem;
+    }
+    .blogcard-Img{
+        width: 14rem;
+        height: 10rem;
+    }
+    .blogCard-arrow-container{
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+
+    .news-container{
+        padding: 6rem 8rem 3rem;
+    }
+    .blogcard-Img{
+        width: 14rem;
+        height: 10rem;
+    }
+
+    .blogCardTile{
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .blogCard-msg{
+        font-size: small;
+    }
+    .blogCardTile, .blogCard-msg{
+        color: black;
+    }
+    .blogCardTile{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    /* ================================================Blog and News Done*/
+    footer{
+        padding-left: 8rem;
+        padding-right: 8rem;
+        padding-bottom: 2rem;
+        padding-top: 18rem;
+    }
+    .footer-logo-container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 0px;
+        gap: 3rem;
+    }
+    .footer-logoMsg-container{
+        /* padding: 0px; */
+        text-align: left;
+    }
+    .footer-icon{
+        padding-left: 0px;
+        padding-right: 1rem;
+    }
+    .footer-links-container{
+        padding: 0px;
+    }
+    #footer-msg{
+        font-size: medium;
+    }
+    /* ========================================= */
+    .footer-logoMsg-container{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .footer-links{
+        padding-top: 0px;
+    }
+    .footer-links > ul > li >a{
+        padding-top: 1rem;
+    }
+
+    
+ }
+ @media (min-width:1180px) {
+    footer{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+ }
+ @media (min-width:1220px) {
+    footer{
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
  }
 
  @media (min-width:1440px) {
@@ -527,8 +848,64 @@
         border-radius: 1.5rem;
         padding: 6rem;
     }
+    /* =============================================Appointment Done */
+    .news-container{
+        top: 15rem;
+        padding-bottom: 5rem;
+    }
+    #blogTitle{
+        font-size: 3rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+    .blogcard-Img{
+        width: 18rem;
+        height: 14rem;
+    }
     
-   
+    .blogCardTile{
+        font-size: 18px;
+    }
+    .blogCard-msg{
+        font-size: large;
+    }
+    .blogCard-arrow-container{
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+    /* ================================================Blog and News Done*/
+    footer{
+        padding-top: 22rem;
+        padding-bottom: 5rem;
+    }
+    .footer-msgTitle{
+        font-size: x-large;
+    }
+    .footer-logo{
+        width: 12rem;
+        height: 4rem;
+    }
+    #footer-msg{
+        font-size: x-large;
+    }
+    .footer-links > ul > li >a{
+        padding-top: 2rem;
+    }
+    .copyright-msg{
+        font-size: large;
+    }
+    .footer-links-icon1{
+        width: 1.5rem;
+        height: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .footer-icon{
+        width: 2.5rem;
+        height: 2.5rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+    }
+
  }
  @media (min-width:1701px) {
     .banner-inside{
@@ -609,6 +986,75 @@
         height:4.5rem;
         width: 4.5rem;
     }
+    /* ===============================================Appointment done */
+    .news-container{
+        top: 23rem;
+    }
+    #blogTitle{
+        font-size: 4rem;
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+    }
+    
+    .blogcard-Img{
+        width: 24rem;
+        height: 18rem;
+    }
+
+    .blogCardTile{
+        font-size: 24px;
+    }
+    .blogCard-msg{
+        font-size: 1.5rem;
+    }
+    .blogCard-arrow-container{
+        padding-left: 14rem;
+        padding-right: 14rem;
+    }
+    .blogCard-arrow{
+        width: 3rem;
+        height: 3rem;
+    }
+    /* ================================================Blog and News Done*/
+    footer{
+        padding-top: 32rem;
+        padding-bottom: 5rem;
+    }
+    .footer-msgTitle{
+        font-size: 30px;
+    }
+    .footer-logo{
+        width: 12rem;
+        height: 4rem;
+    }
+    #footer-msg{
+        font-size: 26px;
+    }
+    .footer-links > ul > li >a{
+        padding-top: 2rem;
+    }
+    .copyright-msg{
+        padding-top: 8rem;
+        font-size: x-large;
+    }
+    .footer-msg{
+        font-size: 26px;
+    }
+    .footer-logo-container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 5rem;
+    }
+    .footer-links-icon1{
+        width: 2rem;
+        height: 2rem;
+    }
+    .footer-icon{
+        width: 3rem;
+        height: 3rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+    }
     
  }
 
@@ -666,7 +1112,58 @@
         height: 5rem;
         width: 5rem;
     }
+/* ===============================================Appointment done */  
+    .news-container{
+        top: 29rem;
+        padding-bottom: 10rem;
 
+    }
+
+    #blogTitle{
+        font-size: 4rem;
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+    }
+    
+    .blogcard-Img{
+        width: 24rem;
+        height: 18rem;
+    }
+    .blogCard{
+        padding: 3rem;
+    }
+
+    .blogCardTile{
+        font-size: 24px;
+    }
+    .blogCard-msg{
+        font-size: 1.5rem;
+    }
+    /* ================================================Blog and News Done*/
+    footer{
+        padding-top: 38rem;
+        padding-bottom: 5rem;
+    }
+    .footer-msgTitle{
+        font-size: 32px;
+    }
+    .footer-logo{
+        width: 14rem;
+        height: 4.5rem;
+    }
+    #footer-msg{
+        padding-top: 3rem;
+        font-size: 30px;
+    }
+    .footer-links > ul > li >a{
+        padding-top: 2.5rem;
+    }
+    .copyright-msg{
+        padding-top: 12rem;
+    }
+    .footer-msg{
+        font-size: 30px;
+    }
 
  }
 
@@ -728,8 +1225,8 @@
         font-size: 32px;
     }
     .appointmentBtn{
-        width: 32rem;
-        height: 7.5rem;
+        width: 38rem;
+        height: 8rem;
         font-size: 2rem;
         border-radius: 1rem;
     }
@@ -743,4 +1240,54 @@
         height: 5rem;
         width: 5rem;
     }
+    /* ===============================================Appointment done */  
+    .news-container{
+    top: 33rem;
+    }
+    .blogCard-arrow{
+        width: 4rem;
+        height: 4rem;
+    }
+    #blogTitle{
+        font-size: 5rem;
+    }
+    /* ================================================Blog and News Done*/
+    footer{
+        padding-left: 18rem;
+        padding-right: 18rem;
+        padding-top: 48rem;
+        padding-bottom: 6rem;
+    }
+    .footer-msgTitle{
+        font-size: 42px;
+    }
+    .footer-logo{
+        width: 16rem;
+        height: 5rem;
+    }
+    #footer-msg{
+        padding-top: 3rem;
+        font-size: 36px;
+    }
+    .footer-links > ul > li >a{
+        padding-top: 2.5rem;
+    }
+    .copyright-msg{
+        padding-top: 16rem;
+        font-size: xx-large;
+    }
+    .footer-msg{
+        font-size: 38px;
+    }
+    .footer-links-icon1{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .footer-icon{
+        width: 3.5rem;
+        height: 3.5rem;
+        padding-right: 2.5rem;
+        padding-top: 3rem;
+    }
+    
  }
